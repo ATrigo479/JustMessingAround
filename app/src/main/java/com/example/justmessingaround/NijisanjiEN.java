@@ -42,10 +42,9 @@ public class NijisanjiEN extends AppCompatActivity {
 
         ArrayList<Integer> songs = new ArrayList<>();
 
-        songs.add(0, R.raw.rick1);
-        songs.add( 1, R.raw.rick2);
-        songs.add(2, R.raw.rick3);
-        songs.add(3,R.raw.rick4);
+        songs.add(0, R.raw.diamond_city_lights);
+        songs.add( 1, R.raw.black_out);
+        songs.add(2, R.raw.god_sees_all);
 
         mMediaPlayer = MediaPlayer.create(getApplicationContext(), songs.get(currentIndex));
 
@@ -144,20 +143,16 @@ public class NijisanjiEN extends AppCompatActivity {
     }
     private void SongName(){
         if(currentIndex == 0){
-            songTitle.setText("Never Gonna Give You Up");
-            imageView.setImageResource(R.drawable.rick);
+            songTitle.setText("Diamond City Lights");
+            imageView.setImageResource(R.drawable.diamond_city_lights);
         }
         if(currentIndex == 1){
-            songTitle.setText("Together Forever");
-            imageView.setImageResource(R.drawable.rick2);
+            songTitle.setText("Black Out");
+            imageView.setImageResource(R.drawable.black_out);
         }
         if(currentIndex == 2){
-            songTitle.setText("Cry for Help");
-            imageView.setImageResource(R.drawable.ric3);
-        }
-        if(currentIndex == 3){
-            songTitle.setText("Whenever You Need Somebody");
-            imageView.setImageResource(R.drawable.ric4);
+            songTitle.setText("God Sees All");
+            imageView.setImageResource(R.drawable.god_sees_all);
         }
 
         mMediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
