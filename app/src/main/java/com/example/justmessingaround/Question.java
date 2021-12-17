@@ -103,10 +103,10 @@ public class Question extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i) {
                     case R.id.q4_1:
-                    case R.id.q4_3:
-                        break;
-                    case R.id.q4_2:
                         a1++;
+                        break;
+                    case R.id.q4_3:
+                    case R.id.q4_2:
                         break;
                     case R.id.q4_4:
                         n1++;
@@ -119,10 +119,10 @@ public class Question extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i) {
                     case R.id.q5_1:
-                        a1++;
+                    case R.id.q5_2:
                         break;
                     case R.id.q5_3:
-                    case R.id.q5_2:
+                        a1++;
                         break;
                     case R.id.q5_4:
                         n1++;
